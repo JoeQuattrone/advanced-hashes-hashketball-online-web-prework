@@ -93,6 +93,19 @@ alternate way
 end  
 =end  
 
+=begin
+def player_numbers(team_name)
+  array = []
+  game_hash.each do |home_away, team_data|
+    if team_data[:team_name] == team_name
+         team_data[:players].each do |player, stats|
+           array.push(stats[:number].to_i)
+      end
+    end
+  end
+  return array
+end
+=end 
 
 def player_numbers(team_name)
   array = []
@@ -105,7 +118,7 @@ def player_numbers(team_name)
   end
   return array
 end
- 
+
 =begin
 alternate way
 def player_numbers(team_name)
