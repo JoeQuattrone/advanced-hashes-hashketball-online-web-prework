@@ -78,7 +78,7 @@ end
 
 def team_names
   game_hash.each do |home_away, keys| 
-    return keys[:team_name]
+     keys[:team_name]
   end
 end
 
